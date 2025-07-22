@@ -51,6 +51,18 @@
       border-radius: 5px;
       font-size: 16px;
     }
+    .bank-references {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+}
+    .row-container {
+  display: flex;
+  gap: 40px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
   </style>
 </head>
 <body>
@@ -84,19 +96,73 @@
       <div class="form-group"><label>Consumo anual de fertilizantes:</label><input type="text" name="consumo"></div>
     </fieldset>
 
-    <fieldset>
-      <legend>Referencias Bancarias</legend>
-      <div class="form-group"><label>Banco 1:</label><input type="text" name="banco1"></div>
-      <div class="form-group"><label>Banco 2:</label><input type="text" name="banco2"></div>
-      <!-- Puedes repetir campos similares para sucursal, cuenta, teléfonos, etc. -->
-    </fieldset>
+  <fieldset>
+    <legend>REFERENCIAS BANCARIAS</legend>
+    <div class="bank-references">
+      <!-- Banco 1 -->
+      <div class="bank-column">
+        <h3>BANCO 1</h3>
+        <div class="form-group"><label>Banco</label><input type="text" placeholder="Referencia 1 Banco"></div>
+        <div class="form-group"><label>Sucursal</label><input type="text" placeholder="Referencia 1 Sucursal"></div>
+        <div class="form-group"><label>Ejecutivo</label><input type="text" placeholder="Referencia 1 Ejecutivo de cuenta"></div>
+        <div class="form-group"><label>Teléfono 1</label><input type="text" placeholder="Referencia 1 Teléfono 1"></div>
+        <div class="form-group"><label>Teléfono 2</label><input type="text" placeholder="Referencia 1 Teléfono 2"></div>
+        <div class="form-group"><label>Celular</label><input type="text" placeholder="Referencia 1 Celular"></div>
+        <div class="form-group"><label>Ciudad</label><input type="text" placeholder="Referencia 1 Ciudad"></div>
+        <div class="form-group"><label>Municipio</label><input type="text" placeholder="Referencia 1 Municipio"></div>
+        <div class="form-group"><label>Estado</label><input type="text" placeholder="Referencia 1 Estado"></div>
+      </div>
 
-    <fieldset>
-      <legend>Referencias Comerciales</legend>
-      <div class="form-group"><label>Empresa 1:</label><input type="text" name="empresa1"></div>
-      <div class="form-group"><label>Empresa 2:</label><input type="text" name="empresa2"></div>
-      <!-- Más campos similares... -->
-    </fieldset>
+      <!-- Banco 2 -->
+      <div class="bank-column">
+        <h3>BANCO 2</h3>
+        <div class="form-group"><label>Banco</label><input type="text" placeholder="Referencia 2 Banco"></div>
+        <div class="form-group"><label>Sucursal</label><input type="text" placeholder="Referencia 2 Sucursal"></div>
+        <div class="form-group"><label>Ejecutivo</label><input type="text" placeholder="Referencia 2 Ejecutivo de cuenta"></div>
+        <div class="form-group"><label>Teléfono 1</label><input type="text" placeholder="Referencia 2 Teléfono 1"></div>
+        <div class="form-group"><label>Teléfono 2</label><input type="text" placeholder="Referencia 2 Teléfono 2"></div>
+        <div class="form-group"><label>Celular</label><input type="text" placeholder="Referencia 2 Celular"></div>
+        <div class="form-group"><label>Ciudad</label><input type="text" placeholder="Referencia 2 Ciudad"></div>
+        <div class="form-group"><label>Municipio</label><input type="text" placeholder="Referencia 2 Municipio"></div>
+        <div class="form-group"><label>Estado</label><input type="text" placeholder="Referencia 2 Estado"></div>
+      </div>
+    </div>
+  </fieldset>
+
+ <fieldset>
+  <legend>REFERENCIAS COMERCIALES</legend>
+  <div class="row-container">
+    <!-- Columna Empresa 1 -->
+    <div class="column">
+      <h3>EMPRESA 1</h3>
+      <div class="form-group"><label>R.F.C.</label><input type="text" placeholder="Empresa 1 RFC"></div>
+      <div class="form-group"><label>Domicilio Fiscal</label><input type="text" placeholder="Empresa 1 Domicilio Fiscal"></div>
+      <div class="form-group"><label>C.P.</label><input type="text" placeholder="Empresa 1 CP"></div>
+      <div class="form-group"><label>Ciudad</label><input type="text" placeholder="Empresa 1 Ciudad"></div>
+      <div class="form-group"><label>Municipio</label><input type="text" placeholder="Empresa 1 Municipio"></div>
+      <div class="form-group"><label>Teléfono 1</label><input type="text" placeholder="Empresa 1 Teléfono 1"></div>
+      <div class="form-group"><label>Teléfono 2</label><input type="text" placeholder="Empresa 1 Teléfono 2"></div>
+      <div class="form-group"><label>Celular</label><input type="text" placeholder="Empresa 1 Celular"></div>
+      <div class="form-group"><label>Correo Electrónico</label><input type="email" placeholder="Empresa 1 Correo electrónico"></div>
+      <div class="form-group"><label>Contacto</label><input type="text" placeholder="Empresa 1 Nombre Contacto"></div>
+    </div>
+
+    <!-- Columna Empresa 2 -->
+    <div class="column">
+      <h3>EMPRESA 2</h3>
+      <div class="form-group"><label>R.F.C.</label><input type="text" placeholder="Empresa 2 RFC"></div>
+      <div class="form-group"><label>Domicilio Fiscal</label><input type="text" placeholder="Empresa 2 Domicilio Fiscal"></div>
+      <div class="form-group"><label>C.P.</label><input type="text" placeholder="Empresa 2 CP"></div>
+      <div class="form-group"><label>Ciudad</label><input type="text" placeholder="Empresa 2 Ciudad"></div>
+      <div class="form-group"><label>Municipio</label><input type="text" placeholder="Empresa 2 Municipio"></div>
+      <div class="form-group"><label>Teléfono 1</label><input type="text" placeholder="Empresa 2 Teléfono 1"></div>
+      <div class="form-group"><label>Teléfono 2</label><input type="text" placeholder="Empresa 2 Teléfono 2"></div>
+      <div class="form-group"><label>Celular</label><input type="text" placeholder="Empresa 2 Celular"></div>
+      <div class="form-group"><label>Correo Electrónico</label><input type="email" placeholder="Empresa 2 Correo electrónico"></div>
+      <div class="form-group"><label>Contacto</label><input type="text" placeholder="Empresa 2 Nombre Contacto"></div>
+    </div>
+  </div>
+</fieldset>
 
     <fieldset>
       <legend>Archivos Anexos</legend>
