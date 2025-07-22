@@ -63,6 +63,23 @@
   flex-wrap: wrap;
 }
 
+
+    .row-container {
+  display: flex;
+  gap: 40px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.column {
+  flex: 1;
+  min-width: 300px;
+}
+
+
+
+
+
   </style>
 </head>
 <body>
@@ -164,19 +181,33 @@
   </div>
 </fieldset>
 
-    <fieldset>
-      <legend>Archivos Anexos</legend>
+
+
+<fieldset>
+  <legend>ARCHIVOS ANEXOS</legend>
+  <div class="row-container">
+    <!-- Columna 1 -->
+    <div class="column">
       <div class="form-group"><label>Acta Constitutiva:</label><input type="file" name="acta"></div>
-      <div class="form-group"><label>Comprobante Domicilio:</label><input type="file" name="domicilio"></div>
-      <div class="form-group"><label>INE:</label><input type="file" name="ine"></div>
-      <div class="form-group"><label>Formato 32D:</label><input type="file" name="formato32d"></div>
-    </fieldset>
+      <div class="form-group"><label>Poder notarial del representante o persona:</label><input type="file" name="poder"></div>
+      <div class="form-group"><label>Comprobante del CURP:</label><input type="file" name="curp"></div>
+    </div>
+
+    <!-- Columna 2 -->
+    <div class="column">
+      <div class="form-group"><label>Constancia de situación fiscal</label><input type="file" name="ine"></div>
+      <div class="form-group"><label>Identificación oficial del apoderado y/o aval</label><input type="file" name="domicilio"></div>
+      <div class="form-group"><label>Formato 32-D</label><input type="file" name="rfc"></div>
+    </div>
+  </div>
+</fieldset>
+
 
     <fieldset>
       <legend>Estados Financieros de los Últimos 3 Años</legend>
-      <div class="form-group"><label>Año 1:</label><input type="file" name="a1"></div>
-      <div class="form-group"><label>Año 2:</label><input type="file" name="a2"></div>
-      <div class="form-group"><label>Año 3:</label><input type="file" name="a3"></div>
+      <div class="form-group"><label>Último año</label><input type="file" name="a1"></div>
+      <div class="form-group"><label>Segundo año</label><input type="file" name="a2"></div>
+      <div class="form-group"><label>Tercer año</label><input type="file" name="a3"></div>
     </fieldset>
 
     <button type="submit" class="submit-btn">Enviar</button>
