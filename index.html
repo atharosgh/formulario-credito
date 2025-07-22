@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Solicitud de Crédito</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f8f8;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+    }
+    form {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      max-width: 1000px;
+      margin: auto;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    fieldset {
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      padding: 10px;
+    }
+    legend {
+      font-weight: bold;
+    }
+    .form-group {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 10px;
+    }
+    .form-group label {
+      width: 200px;
+      font-weight: bold;
+    }
+    .form-group input, .form-group select {
+      flex: 1;
+      padding: 5px;
+    }
+    .submit-btn {
+      display: block;
+      margin: auto;
+      padding: 10px 30px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Solicitud de Crédito</h1>
+  <form action="#" method="post">
+    <fieldset>
+      <legend>Datos Generales</legend>
+      <div class="form-group"><label>Empresa / Razón Social:</label><input type="text" name="empresa"></div>
+      <div class="form-group"><label>R.F.C.:</label><input type="text" name="rfc"></div>
+      <div class="form-group"><label>C.U.R.P.:</label><input type="text" name="curp"></div>
+      <div class="form-group"><label>Régimen Fiscal:</label><select name="regimen"><option>Selecciona</option></select></div>
+      <div class="form-group"><label>Calle y número:</label><input type="text" name="calle"></div>
+      <div class="form-group"><label>Colonia:</label><input type="text" name="colonia"></div>
+      <div class="form-group"><label>Ciudad:</label><input type="text" name="ciudad"></div>
+      <div class="form-group"><label>Municipio:</label><input type="text" name="municipio"></div>
+      <div class="form-group"><label>C.P.:</label><input type="text" name="cp"></div>
+      <div class="form-group"><label>Estado:</label><input type="text" name="estado"></div>
+      <div class="form-group"><label>Teléfono 1:</label><input type="text" name="telefono1"></div>
+      <div class="form-group"><label>Teléfono 2:</label><input type="text" name="telefono2"></div>
+      <div class="form-group"><label>Celular:</label><input type="text" name="celular"></div>
+      <div class="form-group"><label>Correo electrónico:</label><input type="email" name="correo"></div>
+      <div class="form-group"><label>Apoderado legal:</label><input type="text" name="apoderado"></div>
+      <div class="form-group"><label>Nombre del contacto:</label><input type="text" name="contacto"></div>
+      <div class="form-group"><label>Consumo anual de fertilizantes:</label><input type="text" name="consumo"></div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Referencias Bancarias</legend>
+      <div class="form-group"><label>Banco 1:</label><input type="text" name="banco1"></div>
+      <div class="form-group"><label>Banco 2:</label><input type="text" name="banco2"></div>
+      <!-- Puedes repetir campos similares para sucursal, cuenta, teléfonos, etc. -->
+    </fieldset>
+
+    <fieldset>
+      <legend>Referencias Comerciales</legend>
+      <div class="form-group"><label>Empresa 1:</label><input type="text" name="empresa1"></div>
+      <div class="form-group"><label>Empresa 2:</label><input type="text" name="empresa2"></div>
+      <!-- Más campos similares... -->
+    </fieldset>
+
+    <fieldset>
+      <legend>Archivos Anexos</legend>
+      <div class="form-group"><label>Acta Constitutiva:</label><input type="file" name="acta"></div>
+      <div class="form-group"><label>Comprobante Domicilio:</label><input type="file" name="domicilio"></div>
+      <div class="form-group"><label>INE:</label><input type="file" name="ine"></div>
+      <div class="form-group"><label>Formato 32D:</label><input type="file" name="formato32d"></div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Estados Financieros de los Últimos 3 Años</legend>
+      <div class="form-group"><label>Año 1:</label><input type="file" name="a1"></div>
+      <div class="form-group"><label>Año 2:</label><input type="file" name="a2"></div>
+      <div class="form-group"><label>Año 3:</label><input type="file" name="a3"></div>
+    </fieldset>
+
+    <button type="submit" class="submit-btn">Enviar</button>
+  </form>
+</body>
+</html>
