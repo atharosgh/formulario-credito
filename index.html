@@ -54,26 +54,33 @@
   </style>
 </head>
 <body>
-  <h1>!Solicitud de Crédito!</h1>
+  <h1>Solicitud de Crédito</h1>
   <form action="#" method="post">
     <fieldset>
       <legend>Datos Generales</legend>
-      <div class="form-group"><label>Empresa / Razón Social:</label><input type="text" name="empresa"></div>
-      <div class="form-group"><label>R.F.C.:</label><input type="text" name="rfc"></div>
-      <div class="form-group"><label>C.U.R.P.:</label><input type="text" name="curp"></div>
-      <div class="form-group"><label>Régimen Fiscal:</label><select name="regimen"><option>Selecciona</option></select></div>
-      <div class="form-group"><label>Calle y número:</label><input type="text" name="calle"></div>
-      <div class="form-group"><label>Colonia:</label><input type="text" name="colonia"></div>
-      <div class="form-group"><label>Ciudad:</label><input type="text" name="ciudad"></div>
-      <div class="form-group"><label>Municipio:</label><input type="text" name="municipio"></div>
-      <div class="form-group"><label>C.P.:</label><input type="text" name="cp"></div>
-      <div class="form-group"><label>Estado:</label><input type="text" name="estado"></div>
-      <div class="form-group"><label>Teléfono 1:</label><input type="text" name="telefono1"></div>
-      <div class="form-group"><label>Teléfono 2:</label><input type="text" name="telefono2"></div>
-      <div class="form-group"><label>Celular:</label><input type="text" name="celular"></div>
-      <div class="form-group"><label>Correo electrónico:</label><input type="email" name="correo"></div>
+      <div class="form-group"><label>Empresa / Razón Social:<span style="color:red">*</span></label><input type="text" name="empresa"></div>
+      <div class="form-group"><label>R.F.C.:<span style="color:red">*</span></label><input type="text" name="rfc"></div>
+      <div class="form-group"><label>C.U.R.P.:<span style="color:red">*</span></label><input type="text" name="curp"></div>
+      <div class="form-group">
+  <label>Régimen Fiscal:<span style="color:red">*</span></label>
+  <select name="regimen" required>
+    <option value="">Selecciona</option>
+    <option value="fisica">Persona Física</option>
+    <option value="moral">Persona Moral</option>
+  </select>
+</div>
+      <div class="form-group"><label>Calle y número:<span style="color:red">*</span></label><input type="text" name="calle"></div>
+      <div class="form-group"><label>Colonia:<span style="color:red">*</span></label><input type="text" name="colonia"></div>
+      <div class="form-group"><label>Ciudad:<span style="color:red">*</span></label><input type="text" name="ciudad"></div>
+      <div class="form-group"><label>Municipio:<span style="color:red">*</span></label><input type="text" name="municipio"></div>
+      <div class="form-group"><label>C.P.:<span style="color:red">*</span></label><input type="text" name="cp"></div>
+      <div class="form-group"><label>Estado:<span style="color:red">*</span></label><input type="text" name="estado"></div>
+      <div class="form-group"><label>Teléfono 1:<span style="color:red">*</span></label><input type="text" name="telefono1"></div>
+      <div class="form-group"><label>Teléfono 2:<span style="color:red">*</span></label><input type="text" name="telefono2"></div>
+      <div class="form-group"><label>Celular:<span style="color:red">*</span></label><input type="text" name="celular"></div>
+      <div class="form-group"><label>Correo electrónico:<span style="color:red">*</span></label><input type="email" name="correo"></div>
       <div class="form-group"><label>Apoderado legal:</label><input type="text" name="apoderado"></div>
-      <div class="form-group"><label>Nombre del contacto:</label><input type="text" name="contacto"></div>
+      <div class="form-group"><label>Nombre del contacto:<span style="color:red">*</span></label><input type="text" name="contacto"></div>
       <div class="form-group"><label>Consumo anual de fertilizantes:</label><input type="text" name="consumo"></div>
     </fieldset>
 
